@@ -1,0 +1,10 @@
+services:
+
+  receptor-service:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: receptor-service
+    ports:
+      - "8082:8082"
+
