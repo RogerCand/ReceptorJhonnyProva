@@ -3,12 +3,12 @@ pipeline {
 
     stages {
 
-        stage('Verificar Repositório') {
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                          userRemoteConfigs: [[url:'']]])
-            }
-        }
+         stage('Verificar Repositório') {
+                    steps {
+                        checkout([$class: 'GitSCM', branches: [[name: '*/main']],
+                                                  userRemoteConfigs: [[url: 'https://github.com/RogerCand/ReceptorJhonnyProva.git']]])
+                    }
+                }
 
 
 
